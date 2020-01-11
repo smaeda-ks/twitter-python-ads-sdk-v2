@@ -43,7 +43,7 @@ class OAuth1(object):
         return urlencode(params)
 
     def _get_base_headers(client):
-        nonce = ''.join(random.choices(string.ascii_letters + string.digits, k=32))
+        nonce = ''.join(random.choice(string.ascii_letters + string.digits) for _ in range(32))
         timestamp = int(time.time())
         headers = {
             "Authorization": (
