@@ -1,0 +1,715 @@
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Index &mdash; Twitter Ads API SDK for Python 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="#" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Twitter Ads API SDK for Python
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#types-of-endpoint-type">Types of <code class="docutils literal notranslate"><span class="pre">endpoint_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#request-parameters">Request Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#rate-limit-handling-and-request-retry">Rate-limit handling and request retry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#compatibility-versioning">Compatibility &amp; Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="readme.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="readme.html#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">SDK reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.base.html">twitter_ads_v2.base module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.client.html">twitter_ads_v2.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.enum.html">twitter_ads_v2.enum module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.error.html">twitter_ads_v2.error module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.http.html">twitter_ads_v2.http module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.oauth.html">twitter_ads_v2.oauth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.resources.html">twitter_ads_v2.resources module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/twitter_ads_v2.utils.html">twitter_ads_v2.utils module</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Twitter Ads API SDK for Python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Index</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#B"><strong>B</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#H"><strong>H</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#K"><strong>K</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ | <a href="#W"><strong>W</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.access_token">access_token() (twitter_ads_v2.client.Client property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.access_token_secret">access_token_secret() (twitter_ads_v2.client.Client property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.account_id">account_id() (twitter_ads_v2.client.Client property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.account_media">account_media() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.accounts">accounts() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.active_entities">active_entities() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.AGE_BUCKET">AGE_BUCKET (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_async_create_job">analytics_async_create_job() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_async_job_data">analytics_async_job_data() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_async_jobs">analytics_async_jobs() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_sync_stats">analytics_sync_stats() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.authenticated_user_access">authenticated_user_access() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="B">B</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.BadRequest">BadRequest</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base">Base (class in twitter_ads_v2.base)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.BID_UNIT">BID_UNIT (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.bidding_rules">bidding_rules() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Response.body">body() (twitter_ads_v2.http.Response property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.campaigns">campaigns() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.cards_fetch">cards_fetch() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.CHARGE_BY">CHARGE_BY (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client">Client (class in twitter_ads_v2.client)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Request.client">client() (twitter_ads_v2.http.Request property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.ClientError">ClientError</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.Error.code">code() (twitter_ads_v2.error.Error property)</a>
+
+      <ul>
+        <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Response.code">(twitter_ads_v2.http.Response property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.consumer_key">consumer_key() (twitter_ads_v2.client.Client property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.consumer_secret">consumer_secret() (twitter_ads_v2.client.Client property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.content_categories">content_categories() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.CONVERSATION_TYPE">CONVERSATION_TYPE (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.CREATIVE_TYPE">CREATIVE_TYPE (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators">CustomDecorators (class in twitter_ads_v2.utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators.deprecated">deprecated() (twitter_ads_v2.utils.CustomDecorators static method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.Error.details">details() (twitter_ads_v2.error.Error property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.draft_tweets">draft_tweets() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.draft_tweets_preview">draft_tweets_preview() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.ENTITY">ENTITY (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.ENTITY_STATUS">ENTITY_STATUS (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.enum">enum() (in module twitter_ads_v2.enum)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.Error">Error</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Response.error">error() (twitter_ads_v2.http.Response property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.EVENTS">EVENTS (in module twitter_ads_v2.enum)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators.flatten_params">flatten_params() (twitter_ads_v2.utils.CustomDecorators static method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.Forbidden">Forbidden</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.format_date">format_date() (in module twitter_ads_v2.utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.format_time">format_time() (in module twitter_ads_v2.utils)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.Error.from_response">from_response() (twitter_ads_v2.error.Error static method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.funding_instruments">funding_instruments() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.oauth.html#twitter_ads_v2.oauth.OAuth1.get_auth_header">get_auth_header() (twitter_ads_v2.oauth.OAuth1 class method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.get_version">get_version() (in module twitter_ads_v2.utils)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.GRANULARITY">GRANULARITY (in module twitter_ads_v2.enum)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="H">H</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Response.headers">headers() (twitter_ads_v2.http.Response property)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.http_time">http_time() (in module twitter_ads_v2.utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.iab_categories">iab_categories() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.image_app_download_cards">image_app_download_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.image_conversation_cards">image_conversation_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.image_direct_message_cards">image_direct_message_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.insights">insights() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.insights_available_audiences">insights_available_audiences() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="K">K</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.keyword_insights">keyword_insights() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.line_item_apps">line_item_apps() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.line_item_placements">line_item_placements() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.line_items">line_items() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.LOOKALIKE_EXPANSION">LOOKALIKE_EXPANSION (in module twitter_ads_v2.enum)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.MEDIA_CATEGORY">MEDIA_CATEGORY (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.media_creatives">media_creatives() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.media_library">media_library() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.MEDIA_TYPE">MEDIA_TYPE (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Request.method">method() (twitter_ads_v2.http.Request property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.METRIC_GROUP">METRIC_GROUP (in module twitter_ads_v2.enum)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Response.next">next() (twitter_ads_v2.http.Response method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.NotAuthorized">NotAuthorized</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.NotFound">NotFound</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.oauth.html#twitter_ads_v2.oauth.OAuth1">OAuth1 (class in twitter_ads_v2.oauth)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.OBJECTIVE">OBJECTIVE (in module twitter_ads_v2.enum)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.OPTIMIZATIONS">OPTIMIZATIONS (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.options">options() (twitter_ads_v2.client.Client property)</a>
+
+      <ul>
+        <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Request.options">(twitter_ads_v2.http.Request property)</a>
+</li>
+      </ul></li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Request.perform">perform() (twitter_ads_v2.http.Request method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.PERMISSION_LEVEL">PERMISSION_LEVEL (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.PLACEMENT">PLACEMENT (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.poll_cards">poll_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.preroll_call_to_actions">preroll_call_to_actions() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.PRODUCT">PRODUCT (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.promotable_users">promotable_users() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.promoted_accounts">promoted_accounts() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.promoted_tweets">promoted_tweets() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.RateLimit">RateLimit</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Response.raw_body">raw_body() (twitter_ads_v2.http.Response property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.reach_estimate">reach_estimate() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.reach_frequency_campaigns">reach_frequency_campaigns() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.reach_frequency_funding_instruments">reach_frequency_funding_instruments() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.remove_hours">remove_hours() (in module twitter_ads_v2.utils)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.remove_minutes">remove_minutes() (in module twitter_ads_v2.utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Request">Request (class in twitter_ads_v2.http)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.RateLimit.reset_at">reset_at() (twitter_ads_v2.error.RateLimit property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Request.resource">resource() (twitter_ads_v2.http.Request property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators.resource_controller">resource_controller() (twitter_ads_v2.utils.CustomDecorators static method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#twitter_ads_v2.http.Response">Response (class in twitter_ads_v2.http)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.Error.response">response() (twitter_ads_v2.error.Error property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.ServiceUnavailable.retry_after">retry_after() (twitter_ads_v2.error.ServiceUnavailable property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.sandbox">sandbox() (twitter_ads_v2.client.Client property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.scheduled_promoted_tweets">scheduled_promoted_tweets() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.scheduled_tweets">scheduled_tweets() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.SEGMENTATION_TYPE">SEGMENTATION_TYPE (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.ServerError">ServerError</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#twitter_ads_v2.error.ServiceUnavailable">ServiceUnavailable</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.split_list">split_list() (in module twitter_ads_v2.utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.TA_LIST_TYPES">TA_LIST_TYPES (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.TA_OPERATIONS">TA_OPERATIONS (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tailored_audience_permissions">tailored_audience_permissions() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tailored_audiences">tailored_audiences() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tailored_audiences_users">tailored_audiences_users() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria">targeting_criteria() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_app_store_categories">targeting_criteria_app_store_categories() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_behavior_taxonomies">targeting_criteria_behavior_taxonomies() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_behaviors">targeting_criteria_behaviors() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_conversations">targeting_criteria_conversations() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_devices">targeting_criteria_devices() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_events">targeting_criteria_events() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_interests">targeting_criteria_interests() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_languages">targeting_criteria_languages() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_locations">targeting_criteria_locations() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_network_operators">targeting_criteria_network_operators() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_platform_versions">targeting_criteria_platform_versions() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_platforms">targeting_criteria_platforms() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_tv_markets">targeting_criteria_tv_markets() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_tv_shows">targeting_criteria_tv_shows() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_suggestions">targeting_suggestions() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tax_settings">tax_settings() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.TIMELINE_TYPE">TIMELINE_TYPE (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.to_time">to_time() (in module twitter_ads_v2.utils)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.client.html#twitter_ads_v2.client.Client.trace">trace() (twitter_ads_v2.client.Client property)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.TRANSFORM">TRANSFORM (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tweet_previews">tweet_previews() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.TWEET_TYPE">TWEET_TYPE (in module twitter_ads_v2.enum)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tweets">tweets() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.html#module-twitter_ads_v2">twitter_ads_v2 (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#module-twitter_ads_v2.base">twitter_ads_v2.base (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.client.html#module-twitter_ads_v2.client">twitter_ads_v2.client (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.enum.html#module-twitter_ads_v2.enum">twitter_ads_v2.enum (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.error.html#module-twitter_ads_v2.error">twitter_ads_v2.error (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.http.html#module-twitter_ads_v2.http">twitter_ads_v2.http (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.oauth.html#module-twitter_ads_v2.oauth">twitter_ads_v2.oauth (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.resources.html#module-twitter_ads_v2.resources">twitter_ads_v2.resources (module)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.utils.html#module-twitter_ads_v2.utils">twitter_ads_v2.utils (module)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.user_settings">user_settings() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.validate_whole_hours">validate_whole_hours() (in module twitter_ads_v2.utils)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_app_download_cards">video_app_download_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_conversation_cards">video_conversation_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_direct_message_cards">video_direct_message_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_website_cards">video_website_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.website_cards">website_cards() (twitter_ads_v2.base.Base method)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Twitter, Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

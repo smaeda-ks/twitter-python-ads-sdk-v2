@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>twitter_ads_v2.enum &mdash; Twitter Ads API SDK for Python 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Twitter Ads API SDK for Python
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#types-of-endpoint-type">Types of <code class="docutils literal notranslate"><span class="pre">endpoint_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#request-parameters">Request Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#rate-limit-handling-and-request-retry">Rate-limit handling and request retry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#compatibility-versioning">Compatibility &amp; Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">SDK reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.base.html">twitter_ads_v2.base module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.client.html">twitter_ads_v2.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.enum.html">twitter_ads_v2.enum module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.error.html">twitter_ads_v2.error module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.http.html">twitter_ads_v2.http module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.oauth.html">twitter_ads_v2.oauth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.resources.html">twitter_ads_v2.resources module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.utils.html">twitter_ads_v2.utils module</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Twitter Ads API SDK for Python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>twitter_ads_v2.enum</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for twitter_ads_v2.enum</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Container for all enum values used by the Ads API SDK.&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="enum"><a class="viewcode-back" href="../../modules/twitter_ads_v2.enum.html#twitter_ads_v2.enum.enum">[docs]</a><span class="k">def</span> <span class="nf">enum</span><span class="p">(</span><span class="o">**</span><span class="n">enums</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">type</span><span class="p">(</span><span class="s1">&#39;Enum&#39;</span><span class="p">,</span> <span class="p">(),</span> <span class="n">enums</span><span class="p">)</span></div>
+
+
+<span class="n">TRANSFORM</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">TIME</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">BOOL</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">INT</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">LIST</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">OBJECT</span><span class="o">=</span><span class="mi">4</span>
+<span class="p">)</span>
+
+<span class="n">AGE_BUCKET</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">AGE_13_TO_24</span><span class="o">=</span><span class="s1">&#39;AGE_13_TO_24&#39;</span><span class="p">,</span>
+    <span class="n">AGE_13_TO_34</span><span class="o">=</span><span class="s1">&#39;AGE_13_TO_34&#39;</span><span class="p">,</span>
+    <span class="n">AGE_13_TO_49</span><span class="o">=</span><span class="s1">&#39;AGE_13_TO_49&#39;</span><span class="p">,</span>
+    <span class="n">AGE_13_TO_54</span><span class="o">=</span><span class="s1">&#39;AGE_13_TO_54&#39;</span><span class="p">,</span>
+    <span class="n">AGE_OVER_13</span><span class="o">=</span><span class="s1">&#39;AGE_OVER_13&#39;</span><span class="p">,</span>
+    <span class="n">AGE_18_TO_34</span><span class="o">=</span><span class="s1">&#39;AGE_18_TO_34&#39;</span><span class="p">,</span>
+    <span class="n">AGE_18_TO_49</span><span class="o">=</span><span class="s1">&#39;AGE_18_TO_49&#39;</span><span class="p">,</span>
+    <span class="n">AGE_18_TO_54</span><span class="o">=</span><span class="s1">&#39;AGE_18_TO_54&#39;</span><span class="p">,</span>
+    <span class="n">AGE_OVER_18</span><span class="o">=</span><span class="s1">&#39;AGE_OVER_18&#39;</span><span class="p">,</span>
+    <span class="n">AGE_21_TO_34</span><span class="o">=</span><span class="s1">&#39;AGE_21_TO_34&#39;</span><span class="p">,</span>
+    <span class="n">AGE_21_TO_49</span><span class="o">=</span><span class="s1">&#39;AGE_21_TO_49&#39;</span><span class="p">,</span>
+    <span class="n">AGE_21_TO_54</span><span class="o">=</span><span class="s1">&#39;AGE_21_TO_54&#39;</span><span class="p">,</span>
+    <span class="n">AGE_OVER_21</span><span class="o">=</span><span class="s1">&#39;AGE_OVER_21&#39;</span><span class="p">,</span>
+    <span class="n">AGE_25_TO_49</span><span class="o">=</span><span class="s1">&#39;AGE_25_TO_49&#39;</span><span class="p">,</span>
+    <span class="n">AGE_25_TO_54</span><span class="o">=</span><span class="s1">&#39;AGE_25_TO_54&#39;</span><span class="p">,</span>
+    <span class="n">AGE_OVER_25</span><span class="o">=</span><span class="s1">&#39;AGE_OVER_25&#39;</span><span class="p">,</span>
+    <span class="n">AGE_35_TO_49</span><span class="o">=</span><span class="s1">&#39;AGE_35_TO_49&#39;</span><span class="p">,</span>
+    <span class="n">AGE_35_TO_54</span><span class="o">=</span><span class="s1">&#39;AGE_35_TO_54&#39;</span><span class="p">,</span>
+    <span class="n">AGE_OVER_35</span><span class="o">=</span><span class="s1">&#39;AGE_OVER_35&#39;</span><span class="p">,</span>
+    <span class="n">AGE_OVER_50</span><span class="o">=</span><span class="s1">&#39;AGE_OVER_50&#39;</span>
+<span class="p">)</span>
+
+<span class="n">BID_UNIT</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">APP_CLICK</span><span class="o">=</span><span class="s1">&#39;APP_CLICK&#39;</span><span class="p">,</span>
+    <span class="n">APP_INSTALL</span><span class="o">=</span><span class="s1">&#39;APP_INSTALL&#39;</span><span class="p">,</span>
+    <span class="n">ENGAGEMENT</span><span class="o">=</span><span class="s1">&#39;ENGAGEMENT&#39;</span><span class="p">,</span>
+    <span class="n">FOLLOW</span><span class="o">=</span><span class="s1">&#39;FOLLOW&#39;</span><span class="p">,</span>
+    <span class="n">LEAD</span><span class="o">=</span><span class="s1">&#39;LEAD&#39;</span><span class="p">,</span>
+    <span class="n">LINK_CLICK</span><span class="o">=</span><span class="s1">&#39;LINK_CLICK&#39;</span><span class="p">,</span>
+    <span class="n">VIEW</span><span class="o">=</span><span class="s1">&#39;VIEW&#39;</span>
+<span class="p">)</span>
+
+<span class="n">CHARGE_BY</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">APP_CLICK</span><span class="o">=</span><span class="s1">&#39;APP_CLICK&#39;</span><span class="p">,</span>
+    <span class="n">APP_INSTALL</span><span class="o">=</span><span class="s1">&#39;APP_INSTALL&#39;</span><span class="p">,</span>
+    <span class="n">ENGAGEMENT</span><span class="o">=</span><span class="s1">&#39;ENGAGEMENT&#39;</span><span class="p">,</span>
+    <span class="n">FOLLOW</span><span class="o">=</span><span class="s1">&#39;FOLLOW&#39;</span><span class="p">,</span>
+    <span class="n">LEAD</span><span class="o">=</span><span class="s1">&#39;LEAD&#39;</span><span class="p">,</span>
+    <span class="n">LINK_CLICK</span><span class="o">=</span><span class="s1">&#39;LINK_CLICK&#39;</span><span class="p">,</span>
+    <span class="n">VIEW</span><span class="o">=</span><span class="s1">&#39;VIEW&#39;</span>
+<span class="p">)</span>
+
+<span class="n">CREATIVE_TYPE</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">BANNER</span><span class="o">=</span><span class="s1">&#39;BANNER&#39;</span><span class="p">,</span>
+    <span class="n">INTERSTITIAL</span><span class="o">=</span><span class="s1">&#39;INTERSTITIAL&#39;</span><span class="p">,</span>
+    <span class="n">PREROLL</span><span class="o">=</span><span class="s1">&#39;PREROLL&#39;</span><span class="p">,</span>
+    <span class="n">VAST_PREROLL</span><span class="o">=</span><span class="s1">&#39;VAST_PREROLL&#39;</span><span class="p">,</span>
+    <span class="n">MEDIUM_RECTANGLE</span><span class="o">=</span><span class="s1">&#39;MEDIUM_RECTANGLE&#39;</span><span class="p">,</span>
+    <span class="n">BANNER_TABLET</span><span class="o">=</span><span class="s1">&#39;BANNER_TABLET&#39;</span><span class="p">,</span>
+    <span class="n">INTERSTITIAL_LANDSCAPE</span><span class="o">=</span><span class="s1">&#39;INTERSTITIAL_LANDSCAPE&#39;</span><span class="p">,</span>
+    <span class="n">INTERSTITIAL_TABLET</span><span class="o">=</span><span class="s1">&#39;INTERSTITIAL_TABLET&#39;</span><span class="p">,</span>
+    <span class="n">INTERSTITIAL_LANDSCAPE_TABLET</span><span class="o">=</span><span class="s1">&#39;INTERSTITIAL_LANDSCAPE_TABLET&#39;</span>
+<span class="p">)</span>
+
+<span class="n">ENTITY</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">ACCOUNT</span><span class="o">=</span><span class="s1">&#39;ACCOUNT&#39;</span><span class="p">,</span>
+    <span class="n">FUNDING_INSTRUMENT</span><span class="o">=</span><span class="s1">&#39;FUNDING_INSTRUMENT&#39;</span><span class="p">,</span>
+    <span class="n">CAMPAIGN</span><span class="o">=</span><span class="s1">&#39;CAMPAIGN&#39;</span><span class="p">,</span>
+    <span class="n">LINE_ITEM</span><span class="o">=</span><span class="s1">&#39;LINE_ITEM&#39;</span><span class="p">,</span>
+    <span class="n">MEDIA_CREATIVE</span><span class="o">=</span><span class="s1">&#39;MEDIA_CREATIVE&#39;</span><span class="p">,</span>
+    <span class="n">PROMOTED_TWEET</span><span class="o">=</span><span class="s1">&#39;PROMOTED_TWEET&#39;</span><span class="p">,</span>
+    <span class="n">ORGANIC_TWEET</span><span class="o">=</span><span class="s1">&#39;ORGANIC_TWEET&#39;</span><span class="p">,</span>
+    <span class="n">TARGETING_CRITERION</span><span class="o">=</span><span class="s1">&#39;TARGETING_CRITERION&#39;</span><span class="p">,</span>
+    <span class="n">PROMOTED_ACCOUNT</span><span class="o">=</span><span class="s1">&#39;PROMOTED_ACCOUNT&#39;</span>
+<span class="p">)</span>
+
+<span class="n">ENTITY_STATUS</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">ACTIVE</span><span class="o">=</span><span class="s2">&quot;ACTIVE&quot;</span><span class="p">,</span>
+    <span class="n">DRAFT</span><span class="o">=</span><span class="s2">&quot;DRAFT&quot;</span><span class="p">,</span>
+    <span class="n">PAUSED</span><span class="o">=</span><span class="s2">&quot;PAUSED&quot;</span>
+<span class="p">)</span>
+
+<span class="n">EVENTS</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">MUSIC_AND_ENTERTAINMENT</span><span class="o">=</span><span class="s1">&#39;MUSIC_AND_ENTERTAINMENT&#39;</span><span class="p">,</span>
+    <span class="n">SPORTS</span><span class="o">=</span><span class="s1">&#39;SPORTS&#39;</span><span class="p">,</span>
+    <span class="n">HOLIDAY</span><span class="o">=</span><span class="s1">&#39;HOLIDAY&#39;</span><span class="p">,</span>
+    <span class="n">CONFERENCE</span><span class="o">=</span><span class="s1">&#39;CONFERENCE&#39;</span><span class="p">,</span>
+    <span class="n">OTHER</span><span class="o">=</span><span class="s1">&#39;OTHER&#39;</span>
+<span class="p">)</span>
+
+<span class="n">GRANULARITY</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">HOUR</span><span class="o">=</span><span class="s1">&#39;HOUR&#39;</span><span class="p">,</span>
+    <span class="n">DAY</span><span class="o">=</span><span class="s1">&#39;DAY&#39;</span><span class="p">,</span>
+    <span class="n">TOTAL</span><span class="o">=</span><span class="s1">&#39;TOTAL&#39;</span>
+<span class="p">)</span>
+
+<span class="n">MEDIA_CATEGORY</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">AMPLIFY_VIDEO</span><span class="o">=</span><span class="s1">&#39;AMPLIFY_VIDEO&#39;</span><span class="p">,</span>
+    <span class="n">TWEET_GIF</span><span class="o">=</span><span class="s1">&#39;TWEET_GIF&#39;</span><span class="p">,</span>
+    <span class="n">TWEET_IMAGE</span><span class="o">=</span><span class="s1">&#39;TWEET_IMAGE&#39;</span><span class="p">,</span>
+    <span class="n">TWEET_VIDEO</span><span class="o">=</span><span class="s1">&#39;TWEET_VIDEO&#39;</span>
+<span class="p">)</span>
+
+<span class="n">MEDIA_TYPE</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">GIF</span><span class="o">=</span><span class="s1">&#39;GIF&#39;</span><span class="p">,</span>
+    <span class="n">IMAGE</span><span class="o">=</span><span class="s1">&#39;IMAGE&#39;</span><span class="p">,</span>
+    <span class="n">VIDEO</span><span class="o">=</span><span class="s1">&#39;VIDEO&#39;</span>
+<span class="p">)</span>
+
+<span class="n">METRIC_GROUP</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">ENGAGEMENT</span><span class="o">=</span><span class="s1">&#39;ENGAGEMENT&#39;</span><span class="p">,</span>
+    <span class="n">WEB_CONVERSION</span><span class="o">=</span><span class="s1">&#39;WEB_CONVERSION&#39;</span><span class="p">,</span>
+    <span class="n">MOBILE_CONVERSION</span><span class="o">=</span><span class="s1">&#39;MOBILE_CONVERSION&#39;</span><span class="p">,</span>
+    <span class="n">MEDIA</span><span class="o">=</span><span class="s1">&#39;MEDIA&#39;</span><span class="p">,</span>
+    <span class="n">VIDEO</span><span class="o">=</span><span class="s1">&#39;VIDEO&#39;</span><span class="p">,</span>
+    <span class="n">BILLING</span><span class="o">=</span><span class="s1">&#39;BILLING&#39;</span><span class="p">,</span>
+    <span class="n">LIFE_TIME_VALUE_MOBILE_CONVERSION</span><span class="o">=</span><span class="s1">&#39;LIFE_TIME_VALUE_MOBILE_CONVERSION&#39;</span>
+<span class="p">)</span>
+
+<span class="n">OBJECTIVE</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">APP_ENGAGEMENTS</span><span class="o">=</span><span class="s1">&#39;APP_ENGAGEMENTS&#39;</span><span class="p">,</span>
+    <span class="n">APP_INSTALLS</span><span class="o">=</span><span class="s1">&#39;APP_INSTALLS&#39;</span><span class="p">,</span>
+    <span class="n">AWARENESS</span><span class="o">=</span><span class="s1">&#39;AWARENESS&#39;</span><span class="p">,</span>
+    <span class="n">FOLLOWERS</span><span class="o">=</span><span class="s1">&#39;FOLLOWERS&#39;</span><span class="p">,</span>
+    <span class="n">LEAD_GENERATION</span><span class="o">=</span><span class="s1">&#39;LEAD_GENERATION&#39;</span><span class="p">,</span>
+    <span class="n">TWEET_ENGAGEMENTS</span><span class="o">=</span><span class="s1">&#39;TWEET_ENGAGEMENTS&#39;</span><span class="p">,</span>
+    <span class="n">VIDEO_VIEWS_PREROLL</span><span class="o">=</span><span class="s1">&#39;VIDEO_VIEWS_PREROLL&#39;</span><span class="p">,</span>
+    <span class="n">VIDEO_VIEWS</span><span class="o">=</span><span class="s1">&#39;VIDEO_VIEWS&#39;</span><span class="p">,</span>
+    <span class="n">WEBSITE_CLICKS</span><span class="o">=</span><span class="s1">&#39;WEBSITE_CLICKS&#39;</span><span class="p">,</span>
+    <span class="n">WEBSITE_CONVERSIONS</span><span class="o">=</span><span class="s1">&#39;WEBSITE_CONVERSIONS&#39;</span>
+<span class="p">)</span>
+
+<span class="n">OPTIMIZATIONS</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">APP_CLICKS</span><span class="o">=</span><span class="s1">&#39;APP_CLICKS&#39;</span><span class="p">,</span>
+    <span class="n">APP_INSTALLS</span><span class="o">=</span><span class="s1">&#39;APP_INSTALLS&#39;</span><span class="p">,</span>
+    <span class="n">DEFAULT</span><span class="o">=</span><span class="s1">&#39;DEFAULT&#39;</span><span class="p">,</span>
+    <span class="n">ENGAGEMENTS</span><span class="o">=</span><span class="s1">&#39;ENGAGEMENTS&#39;</span><span class="p">,</span>
+    <span class="n">WEBSITE_CONVERSIONS</span><span class="o">=</span><span class="s1">&#39;WEBSITE_CONVERSIONS&#39;</span>
+<span class="p">)</span>
+
+<span class="n">PERMISSION_LEVEL</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">READ_ONLY</span><span class="o">=</span><span class="s1">&#39;READ_ONLY&#39;</span><span class="p">,</span>
+    <span class="n">READ_WRITE</span><span class="o">=</span><span class="s1">&#39;READ_WRITE&#39;</span>
+<span class="p">)</span>
+
+<span class="n">PLACEMENT</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">ALL_ON_TWITTER</span><span class="o">=</span><span class="s1">&#39;ALL_ON_TWITTER&#39;</span><span class="p">,</span>
+    <span class="n">TWITTER_SEARCH</span><span class="o">=</span><span class="s1">&#39;TWITTER_SEARCH&#39;</span><span class="p">,</span>
+    <span class="n">TWITTER_TIMELINE</span><span class="o">=</span><span class="s1">&#39;TWITTER_TIMELINE&#39;</span><span class="p">,</span>
+    <span class="n">PUBLISHER_NETWORK</span><span class="o">=</span><span class="s1">&#39;PUBLISHER_NETWORK&#39;</span>
+<span class="p">)</span>
+
+<span class="n">PRODUCT</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">PROMOTED_ACCOUNT</span><span class="o">=</span><span class="s1">&#39;PROMOTED_ACCOUNT&#39;</span><span class="p">,</span>
+    <span class="n">PROMOTED_TWEETS</span><span class="o">=</span><span class="s1">&#39;PROMOTED_TWEETS&#39;</span>
+<span class="p">)</span>
+
+<span class="n">TA_LIST_TYPES</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">EMAIL</span><span class="o">=</span><span class="s1">&#39;EMAIL&#39;</span><span class="p">,</span>
+    <span class="n">DEVICE_ID</span><span class="o">=</span><span class="s1">&#39;DEVICE_ID&#39;</span><span class="p">,</span>
+    <span class="n">TWITTER_ID</span><span class="o">=</span><span class="s1">&#39;TWITTER_ID&#39;</span><span class="p">,</span>
+    <span class="n">HANDLE</span><span class="o">=</span><span class="s1">&#39;HANDLE&#39;</span><span class="p">,</span>
+    <span class="n">PHONE_NUMBER</span><span class="o">=</span><span class="s1">&#39;PHONE_NUMBER&#39;</span>
+<span class="p">)</span>
+
+<span class="n">TA_OPERATIONS</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">ADD</span><span class="o">=</span><span class="s1">&#39;ADD&#39;</span><span class="p">,</span>
+    <span class="n">REMOVE</span><span class="o">=</span><span class="s1">&#39;REMOVE&#39;</span><span class="p">,</span>
+    <span class="n">REPLACE</span><span class="o">=</span><span class="s1">&#39;REPLACE&#39;</span>
+<span class="p">)</span>
+
+<span class="n">CONVERSATION_TYPE</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">HASHTAG</span><span class="o">=</span><span class="s1">&#39;HASHTAG&#39;</span><span class="p">,</span>
+    <span class="n">HANDLE</span><span class="o">=</span><span class="s1">&#39;TARGETING_CRITERIA&#39;</span><span class="p">,</span>
+    <span class="n">EVENT</span><span class="o">=</span><span class="s1">&#39;EVENT&#39;</span>
+<span class="p">)</span>
+
+<span class="n">LOOKALIKE_EXPANSION</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">BROAD</span><span class="o">=</span><span class="s1">&#39;BROAD&#39;</span><span class="p">,</span>
+    <span class="n">DEFINED</span><span class="o">=</span><span class="s1">&#39;DEFINED&#39;</span><span class="p">,</span>
+    <span class="n">EXPANDED</span><span class="o">=</span><span class="s1">&#39;EXPANDED&#39;</span>
+<span class="p">)</span>
+
+<span class="n">TWEET_TYPE</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">DRAFT</span><span class="o">=</span><span class="s1">&#39;DRAFT&#39;</span><span class="p">,</span>
+    <span class="n">PUBLISHED</span><span class="o">=</span><span class="s1">&#39;PUBLISHED&#39;</span><span class="p">,</span>
+    <span class="n">SCHEDULED</span><span class="o">=</span><span class="s1">&#39;SCHEDULED&#39;</span>
+<span class="p">)</span>
+
+<span class="n">TIMELINE_TYPE</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">ALL</span><span class="o">=</span><span class="s1">&#39;ALL&#39;</span><span class="p">,</span>
+    <span class="n">NULLCAST</span><span class="o">=</span><span class="s1">&#39;NULLCAST&#39;</span><span class="p">,</span>
+    <span class="n">ORGANIC</span><span class="o">=</span><span class="s1">&#39;ORGANIC&#39;</span>
+<span class="p">)</span>
+
+<span class="n">SEGMENTATION_TYPE</span> <span class="o">=</span> <span class="n">enum</span><span class="p">(</span>
+    <span class="n">AGE</span><span class="o">=</span><span class="s1">&#39;AGE&#39;</span><span class="p">,</span>
+    <span class="n">APP_STORE_CATEGORY</span><span class="o">=</span><span class="s1">&#39;APP_STORE_CATEGORY&#39;</span><span class="p">,</span>
+    <span class="n">AUDIENCES</span><span class="o">=</span><span class="s1">&#39;AUDIENCES&#39;</span><span class="p">,</span>
+    <span class="n">METROS</span><span class="o">=</span><span class="s1">&#39;METROS&#39;</span><span class="p">,</span>
+    <span class="n">CONVERSATIONS</span><span class="o">=</span><span class="s1">&#39;CONVERSATIONS&#39;</span><span class="p">,</span>
+    <span class="n">CONVERSION_TAGS</span><span class="o">=</span><span class="s1">&#39;CONVERSION_TAGS&#39;</span><span class="p">,</span>
+    <span class="n">DEVICES</span><span class="o">=</span><span class="s1">&#39;DEVICES&#39;</span><span class="p">,</span>
+    <span class="n">EVENTS</span><span class="o">=</span><span class="s1">&#39;EVENTS&#39;</span><span class="p">,</span>
+    <span class="n">GENDER</span><span class="o">=</span><span class="s1">&#39;GENDER&#39;</span><span class="p">,</span>
+    <span class="n">INTERESTS</span><span class="o">=</span><span class="s1">&#39;INTERESTS&#39;</span><span class="p">,</span>
+    <span class="n">KEYWORDS</span><span class="o">=</span><span class="s1">&#39;KEYWORDS&#39;</span><span class="p">,</span>
+    <span class="n">LANGUAGES</span><span class="o">=</span><span class="s1">&#39;LANGUAGES&#39;</span><span class="p">,</span>
+    <span class="n">LOCATIONS</span><span class="o">=</span><span class="s1">&#39;LOCATIONS&#39;</span><span class="p">,</span>
+    <span class="n">PLATFORMS</span><span class="o">=</span><span class="s1">&#39;PLATFORMS&#39;</span><span class="p">,</span>
+    <span class="n">PLATFORM_VERSIONS</span><span class="o">=</span><span class="s1">&#39;PLATFORM_VERSIONS&#39;</span><span class="p">,</span>
+    <span class="n">POSTAL_CODES</span><span class="o">=</span><span class="s1">&#39;POSTAL_CODES&#39;</span><span class="p">,</span>
+    <span class="n">REGIONS</span><span class="o">=</span><span class="s1">&#39;REGIONS&#39;</span><span class="p">,</span>
+    <span class="n">SIMILAR_TO_FOLLOWERS_OF_USER</span><span class="o">=</span><span class="s1">&#39;SIMILAR_TO_FOLLOWERS_OF_USER&#39;</span><span class="p">,</span>
+    <span class="n">TV_SHOWS</span><span class="o">=</span><span class="s1">&#39;TV_SHOWS&#39;</span>
+<span class="p">)</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Twitter, Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

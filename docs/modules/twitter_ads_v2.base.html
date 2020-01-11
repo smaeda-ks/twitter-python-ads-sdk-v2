@@ -1,0 +1,985 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>twitter_ads_v2.base module &mdash; Twitter Ads API SDK for Python 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="twitter_ads_v2.client module" href="twitter_ads_v2.client.html" />
+    <link rel="prev" title="Getting Started" href="../readme.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Twitter Ads API SDK for Python
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../readme.html#types-of-endpoint-type">Types of <code class="docutils literal notranslate"><span class="pre">endpoint_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../readme.html#request-parameters">Request Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../readme.html#rate-limit-handling-and-request-retry">Rate-limit handling and request retry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#compatibility-versioning">Compatibility &amp; Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../readme.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../readme.html#tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../readme.html#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">SDK reference</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">twitter_ads_v2.base module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter_ads_v2.client.html">twitter_ads_v2.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter_ads_v2.enum.html">twitter_ads_v2.enum module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter_ads_v2.error.html">twitter_ads_v2.error module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter_ads_v2.http.html">twitter_ads_v2.http module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter_ads_v2.oauth.html">twitter_ads_v2.oauth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter_ads_v2.resources.html">twitter_ads_v2.resources module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="twitter_ads_v2.utils.html">twitter_ads_v2.utils module</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Twitter Ads API SDK for Python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>twitter_ads_v2.base module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/modules/twitter_ads_v2.base.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-twitter_ads_v2.base">
+<span id="twitter-ads-v2-base-module"></span><h1>twitter_ads_v2.base module<a class="headerlink" href="#module-twitter_ads_v2.base" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="twitter_ads_v2.base.Base">
+<em class="property">class </em><code class="sig-prename descclassname">twitter_ads_v2.base.</code><code class="sig-name descname">Base</code><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.account_media">
+<code class="sig-name descname">account_media</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.account_media"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.account_media" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account Media
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/account-media">https://developer.twitter.com/en/docs/ads/creatives/api-reference/account-media</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.accounts">
+<code class="sig-name descname">accounts</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.accounts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accounts
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/accounts">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/accounts</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.
+id (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An Ads Account ID to retrieve.
+Required when <cite>endpoint_type</cite> is <cite>load</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.active_entities">
+<code class="sig-name descname">active_entities</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.active_entities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.active_entities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Active Entities
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/analytics/api-reference/active-entities">https://developer.twitter.com/en/docs/ads/analytics/api-reference/active-entities</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.analytics_async_create_job">
+<code class="sig-name descname">analytics_async_create_job</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.analytics_async_create_job"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.analytics_async_create_job" title="Permalink to this definition">¶</a></dt>
+<dd><p>Asynchronous Analytics
+Create an asynchronous analytics job for the current account.
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#post-stats-jobs-accounts-account-id">https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#post-stats-jobs-accounts-account-id</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>create</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.analytics_async_job_data">
+<code class="sig-name descname">analytics_async_job_data</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type='load'</em>, <em class="sig-param">*</em>, <em class="sig-param">url</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.analytics_async_job_data"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.analytics_async_job_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the results of the specified async job data URL.</p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>load</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.
+url (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): A job data URL to download.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.analytics_async_jobs">
+<code class="sig-name descname">analytics_async_jobs</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.analytics_async_jobs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.analytics_async_jobs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Asynchronous Analytics
+Retrieve details for some or all asynchronous analytics jobs for the current account.
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#get-stats-jobs-accounts-account-id">https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#get-stats-jobs-accounts-account-id</a>
+Cancel an asynchronous analytics job for a given ads account.
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#delete-stats-jobs-accounts-account-id-job-id">https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#delete-stats-jobs-accounts-account-id-job-id</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.analytics_sync_stats">
+<code class="sig-name descname">analytics_sync_stats</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.analytics_sync_stats"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.analytics_sync_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Synchronous Analytics
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/analytics/api-reference/synchronous">https://developer.twitter.com/en/docs/ads/analytics/api-reference/synchronous</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.authenticated_user_access">
+<code class="sig-name descname">authenticated_user_access</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.authenticated_user_access"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.authenticated_user_access" title="Permalink to this definition">¶</a></dt>
+<dd><p>Authenticated User Access
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/authenticated-user-access">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/authenticated-user-access</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.bidding_rules">
+<code class="sig-name descname">bidding_rules</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.bidding_rules"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.bidding_rules" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bidding Rules
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/bidding-rules">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/bidding-rules</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.campaigns">
+<code class="sig-name descname">campaigns</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">*</em>, <em class="sig-param">data=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.campaigns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.campaigns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Campaigns
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/campaigns">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/campaigns</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>batch</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.
+data (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>, optional): A JSON POST body data to send.
+Required when <cite>endpoint_type</cite> is <cite>batch</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.cards_fetch">
+<code class="sig-name descname">cards_fetch</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.cards_fetch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.cards_fetch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cards Fetch
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/cards-fetch">https://developer.twitter.com/en/docs/ads/creatives/api-reference/cards-fetch</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.content_categories">
+<code class="sig-name descname">content_categories</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.content_categories"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.content_categories" title="Permalink to this definition">¶</a></dt>
+<dd><p>Content Categories
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/content-categories">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/content-categories</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.draft_tweets">
+<code class="sig-name descname">draft_tweets</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.draft_tweets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.draft_tweets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draft Tweets
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/draft-tweets">https://developer.twitter.com/en/docs/ads/creatives/api-reference/draft-tweets</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.draft_tweets_preview">
+<code class="sig-name descname">draft_tweets_preview</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type='create'</em>, <em class="sig-param">*</em>, <em class="sig-param">resource=None</em>, <em class="sig-param">draft_tweet_id</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.draft_tweets_preview"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.draft_tweets_preview" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draft Tweets Preview
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/draft-tweets#post-accounts-account-id-draft-tweets-preview-draft-tweet-id">https://developer.twitter.com/en/docs/ads/creatives/api-reference/draft-tweets#post-accounts-account-id-draft-tweets-preview-draft-tweet-id</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>create</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.
+draft_tweet_id (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): A Draft Tweet ID to preview.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.funding_instruments">
+<code class="sig-name descname">funding_instruments</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.funding_instruments"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.funding_instruments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Funding Instruments
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/funding-instruments">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/funding-instruments</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.iab_categories">
+<code class="sig-name descname">iab_categories</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.iab_categories"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.iab_categories" title="Permalink to this definition">¶</a></dt>
+<dd><p>IAB Categories
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/iab-categories">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/iab-categories</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.image_app_download_cards">
+<code class="sig-name descname">image_app_download_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.image_app_download_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.image_app_download_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Image App Download Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-app-download">https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-app-download</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.image_conversation_cards">
+<code class="sig-name descname">image_conversation_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.image_conversation_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.image_conversation_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Image Conversation Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-conversation">https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-conversation</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.image_direct_message_cards">
+<code class="sig-name descname">image_direct_message_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.image_direct_message_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.image_direct_message_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Image Direct Message Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-direct-message">https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-direct-message</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.insights">
+<code class="sig-name descname">insights</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.insights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.insights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insights
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/audiences/api-reference/insights">https://developer.twitter.com/en/docs/ads/audiences/api-reference/insights</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.insights_available_audiences">
+<code class="sig-name descname">insights_available_audiences</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.insights_available_audiences"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.insights_available_audiences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insights (available_audiences)
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/audiences/api-reference/insights#get-insights-accounts-account-id-available-audiences">https://developer.twitter.com/en/docs/ads/audiences/api-reference/insights#get-insights-accounts-account-id-available-audiences</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.keyword_insights">
+<code class="sig-name descname">keyword_insights</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.keyword_insights"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.keyword_insights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Keyword Insights
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/audiences/api-reference/keyword-insights">https://developer.twitter.com/en/docs/ads/audiences/api-reference/keyword-insights</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.line_item_apps">
+<code class="sig-name descname">line_item_apps</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.line_item_apps"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.line_item_apps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line Item Apps
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-item-apps">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-item-apps</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.line_item_placements">
+<code class="sig-name descname">line_item_placements</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.line_item_placements"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.line_item_placements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line Item Placements
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-item-placements">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-item-placements</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.line_items">
+<code class="sig-name descname">line_items</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">*</em>, <em class="sig-param">data=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.line_items"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.line_items" title="Permalink to this definition">¶</a></dt>
+<dd><p>Line Items
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-items">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-items</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>batch</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.
+data (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>, optional): A JSON POST body data to send.
+Required when <cite>endpoint_type</cite> is <cite>batch</cite>.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.media_creatives">
+<code class="sig-name descname">media_creatives</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.media_creatives"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.media_creatives" title="Permalink to this definition">¶</a></dt>
+<dd><p>Media Creatives
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/media-creatives">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/media-creatives</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.media_library">
+<code class="sig-name descname">media_library</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.media_library"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.media_library" title="Permalink to this definition">¶</a></dt>
+<dd><p>Media Library
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/media-library">https://developer.twitter.com/en/docs/ads/creatives/api-reference/media-library</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.poll_cards">
+<code class="sig-name descname">poll_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.poll_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.poll_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Poll Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/poll">https://developer.twitter.com/en/docs/ads/creatives/api-reference/poll</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.preroll_call_to_actions">
+<code class="sig-name descname">preroll_call_to_actions</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.preroll_call_to_actions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.preroll_call_to_actions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Preroll Call To Actions
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/preroll-call-to-actions">https://developer.twitter.com/en/docs/ads/creatives/api-reference/preroll-call-to-actions</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.promotable_users">
+<code class="sig-name descname">promotable_users</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.promotable_users"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.promotable_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Promotable Users
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promotable-users">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promotable-users</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.promoted_accounts">
+<code class="sig-name descname">promoted_accounts</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.promoted_accounts"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.promoted_accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Promoted Accounts
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promoted-accounts">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promoted-accounts</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.promoted_tweets">
+<code class="sig-name descname">promoted_tweets</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.promoted_tweets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.promoted_tweets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Promoted Tweets
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promoted-tweets">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promoted-tweets</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.reach_estimate">
+<code class="sig-name descname">reach_estimate</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.reach_estimate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.reach_estimate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reach Estimate
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/reach-estimate">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/reach-estimate</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.reach_frequency_campaigns">
+<code class="sig-name descname">reach_frequency_campaigns</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.reach_frequency_campaigns"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.reach_frequency_campaigns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reach and Average Frequency (campaigns)
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/analytics/api-reference/reach#get-stats-accounts-account-id-reach-campaigns">https://developer.twitter.com/en/docs/ads/analytics/api-reference/reach#get-stats-accounts-account-id-reach-campaigns</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.reach_frequency_funding_instruments">
+<code class="sig-name descname">reach_frequency_funding_instruments</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.reach_frequency_funding_instruments"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.reach_frequency_funding_instruments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reach and Average Frequency (funding_instruments)
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/analytics/api-reference/reach#get-stats-accounts-account-id-reach-funding-instruments">https://developer.twitter.com/en/docs/ads/analytics/api-reference/reach#get-stats-accounts-account-id-reach-funding-instruments</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite> (default)</p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.scheduled_promoted_tweets">
+<code class="sig-name descname">scheduled_promoted_tweets</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.scheduled_promoted_tweets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.scheduled_promoted_tweets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scheduled Promoted Tweets
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/scheduled-promoted-tweets">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/scheduled-promoted-tweets</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.scheduled_tweets">
+<code class="sig-name descname">scheduled_tweets</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.scheduled_tweets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.scheduled_tweets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scheduled Tweets
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/scheduled-tweets">https://developer.twitter.com/en/docs/ads/creatives/api-reference/scheduled-tweets</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.tailored_audience_permissions">
+<code class="sig-name descname">tailored_audience_permissions</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.tailored_audience_permissions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.tailored_audience_permissions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tailored Audience Permissions
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/audiences/api-reference/tailored-audience-permissions">https://developer.twitter.com/en/docs/ads/audiences/api-reference/tailored-audience-permissions</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.tailored_audiences">
+<code class="sig-name descname">tailored_audiences</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.tailored_audiences"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.tailored_audiences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tailored Audiences
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/audiences/api-reference/tailored-audiences">https://developer.twitter.com/en/docs/ads/audiences/api-reference/tailored-audiences</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.tailored_audiences_users">
+<code class="sig-name descname">tailored_audiences_users</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type='create'</em>, <em class="sig-param">*</em>, <em class="sig-param">tailored_audience_id</em>, <em class="sig-param">data=[]</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.tailored_audiences_users"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.tailored_audiences_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tailored Audiences Users
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/audiences/api-reference/audience">https://developer.twitter.com/en/docs/ads/audiences/api-reference/audience</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>create</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.
+tailored_audience_id (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): A Tailored Audience ID to update.
+data (<code class="xref py py-obj docutils literal notranslate"><span class="pre">list</span></code>): A JSON POST body data to send.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria">
+<code class="sig-name descname">targeting_criteria</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria" title="Permalink to this definition">¶</a></dt>
+<dd><p>Targeting Criteria
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/targeting-criteria">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/targeting-criteria</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_app_store_categories">
+<code class="sig-name descname">targeting_criteria_app_store_categories</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_app_store_categories"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_app_store_categories" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_behavior_taxonomies">
+<code class="sig-name descname">targeting_criteria_behavior_taxonomies</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_behavior_taxonomies"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_behavior_taxonomies" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_behaviors">
+<code class="sig-name descname">targeting_criteria_behaviors</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_behaviors"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_behaviors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_conversations">
+<code class="sig-name descname">targeting_criteria_conversations</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_conversations"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_conversations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_devices">
+<code class="sig-name descname">targeting_criteria_devices</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_devices"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_devices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_events">
+<code class="sig-name descname">targeting_criteria_events</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_events"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_events" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_interests">
+<code class="sig-name descname">targeting_criteria_interests</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_interests"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_interests" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_languages">
+<code class="sig-name descname">targeting_criteria_languages</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_languages"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_languages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_locations">
+<code class="sig-name descname">targeting_criteria_locations</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_locations"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_locations" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_network_operators">
+<code class="sig-name descname">targeting_criteria_network_operators</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_network_operators"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_network_operators" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_platform_versions">
+<code class="sig-name descname">targeting_criteria_platform_versions</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_platform_versions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_platform_versions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_platforms">
+<code class="sig-name descname">targeting_criteria_platforms</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_platforms"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_platforms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_tv_markets">
+<code class="sig-name descname">targeting_criteria_tv_markets</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_tv_markets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_tv_markets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_criteria_tv_shows">
+<code class="sig-name descname">targeting_criteria_tv_shows</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_criteria_tv_shows"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_criteria_tv_shows" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.targeting_suggestions">
+<code class="sig-name descname">targeting_suggestions</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.targeting_suggestions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.targeting_suggestions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Targeting Suggestions
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/targeting-suggestions">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/targeting-suggestions</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.tax_settings">
+<code class="sig-name descname">tax_settings</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.tax_settings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.tax_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tax Settings
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/tax-settings">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/tax-settings</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>update</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.tweet_previews">
+<code class="sig-name descname">tweet_previews</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.tweet_previews"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.tweet_previews" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tweet Previews
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/tweet-previews">https://developer.twitter.com/en/docs/ads/creatives/api-reference/tweet-previews</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.tweets">
+<code class="sig-name descname">tweets</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.tweets"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.tweets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tweets
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/tweets">https://developer.twitter.com/en/docs/ads/creatives/api-reference/tweets</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>create</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.user_settings">
+<code class="sig-name descname">user_settings</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.user_settings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.user_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>User Settings
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/user-settings">https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/user-settings</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>load</cite>, <cite>update</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.video_app_download_cards">
+<code class="sig-name descname">video_app_download_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.video_app_download_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.video_app_download_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Video App Download Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-app-download">https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-app-download</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.video_conversation_cards">
+<code class="sig-name descname">video_conversation_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.video_conversation_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.video_conversation_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Video Conversation Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-conversation">https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-conversation</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.video_direct_message_cards">
+<code class="sig-name descname">video_direct_message_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.video_direct_message_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.video_direct_message_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Video Direct Message Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-direct-message">https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-direct-message</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.video_website_cards">
+<code class="sig-name descname">video_website_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.video_website_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.video_website_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Video Website Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-website">https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-website</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="twitter_ads_v2.base.Base.website_cards">
+<code class="sig-name descname">website_cards</code><span class="sig-paren">(</span><em class="sig-param">endpoint_type</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/twitter_ads_v2/base.html#Base.website_cards"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#twitter_ads_v2.base.Base.website_cards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Website Cards
+<a class="reference external" href="https://developer.twitter.com/en/docs/ads/creatives/api-reference/website">https://developer.twitter.com/en/docs/ads/creatives/api-reference/website</a></p>
+<dl class="simple">
+<dt>Supported <cite>endpoint_type</cite>:</dt><dd><p><cite>all</cite>, <cite>load</cite>, <cite>create</cite>, <cite>update</cite>, <cite>delete</cite></p>
+</dd>
+<dt>Args:</dt><dd><p>endpoint_type (<code class="xref py py-obj docutils literal notranslate"><span class="pre">str</span></code>, optional): An endpoint type.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="twitter_ads_v2.client.html" class="btn btn-neutral float-right" title="twitter_ads_v2.client module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../readme.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Twitter, Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>twitter_ads_v2.utils &mdash; Twitter Ads API SDK for Python 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Twitter Ads API SDK for Python
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#types-of-endpoint-type">Types of <code class="docutils literal notranslate"><span class="pre">endpoint_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#request-parameters">Request Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#rate-limit-handling-and-request-retry">Rate-limit handling and request retry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#compatibility-versioning">Compatibility &amp; Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">SDK reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.base.html">twitter_ads_v2.base module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.client.html">twitter_ads_v2.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.enum.html">twitter_ads_v2.enum module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.error.html">twitter_ads_v2.error module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.http.html">twitter_ads_v2.http module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.oauth.html">twitter_ads_v2.oauth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.resources.html">twitter_ads_v2.resources module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.utils.html">twitter_ads_v2.utils module</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Twitter Ads API SDK for Python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>twitter_ads_v2.utils</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for twitter_ads_v2.utils</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;Container for all helpers and utilities used throughout the Ads API SDK.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s1">&#39;default&#39;</span><span class="p">,</span> <span class="ne">DeprecationWarning</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">email.utils</span> <span class="kn">import</span> <span class="n">formatdate</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">mktime</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">wraps</span>
+
+<span class="kn">from</span> <span class="nn">twitter_ads_v2</span> <span class="kn">import</span> <span class="n">VERSION</span>
+<span class="kn">from</span> <span class="nn">twitter_ads_v2.enum</span> <span class="kn">import</span> <span class="n">GRANULARITY</span>
+<span class="kn">from</span> <span class="nn">twitter_ads_v2.resources</span> <span class="kn">import</span> <span class="n">RESOURCE_TABLE</span>
+
+
+<div class="viewcode-block" id="get_version"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.get_version">[docs]</a><span class="k">def</span> <span class="nf">get_version</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Returns a string representation of the current SDK version.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">VERSION</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">VERSION</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span> <span class="o">+</span> <span class="n">VERSION</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="s1">&#39;.&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">VERSION</span><span class="p">))</span></div>
+
+
+<div class="viewcode-block" id="remove_minutes"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.remove_minutes">[docs]</a><span class="k">def</span> <span class="nf">remove_minutes</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Sets the minutes, seconds, and microseconds to zero.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">minute</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">second</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="remove_hours"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.remove_hours">[docs]</a><span class="k">def</span> <span class="nf">remove_hours</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Sets the hours, minutes, seconds, and microseconds to zero.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">hour</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">minute</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">second</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="to_time"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.to_time">[docs]</a><span class="k">def</span> <span class="nf">to_time</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">granularity</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns a truncated and rounded time string based on the specified granularity.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">granularity</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="ow">is</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">format_date</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">format_time</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">granularity</span> <span class="o">==</span> <span class="n">GRANULARITY</span><span class="o">.</span><span class="n">HOUR</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">format_time</span><span class="p">(</span><span class="n">remove_minutes</span><span class="p">(</span><span class="n">time</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">granularity</span> <span class="o">==</span> <span class="n">GRANULARITY</span><span class="o">.</span><span class="n">DAY</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">format_date</span><span class="p">(</span><span class="n">remove_hours</span><span class="p">(</span><span class="n">time</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">format_time</span><span class="p">(</span><span class="n">time</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="format_time"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.format_time">[docs]</a><span class="k">def</span> <span class="nf">format_time</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Formats a datetime as an ISO 8601 compliant string.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">T%H:%M:%SZ&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="format_date"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.format_date">[docs]</a><span class="k">def</span> <span class="nf">format_date</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Formats a datetime as an ISO 8601 compliant string, dropping time.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">time</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="http_time"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.http_time">[docs]</a><span class="k">def</span> <span class="nf">http_time</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Formats a datetime as an RFC 1123 compliant string.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">formatdate</span><span class="p">(</span><span class="n">timeval</span><span class="o">=</span><span class="n">mktime</span><span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">timetuple</span><span class="p">()),</span> <span class="n">localtime</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">usegmt</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="validate_whole_hours"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.validate_whole_hours">[docs]</a><span class="k">def</span> <span class="nf">validate_whole_hours</span><span class="p">(</span><span class="n">time</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">time</span><span class="p">)</span> <span class="ow">is</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># Times must be expressed in whole hours</span>
+        <span class="k">if</span> <span class="n">time</span><span class="o">.</span><span class="n">minute</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">time</span><span class="o">.</span><span class="n">second</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;&#39;start_time&#39; and &#39;end_time&#39; must be expressed in whole hours.&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="split_list"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.split_list">[docs]</a><span class="k">def</span> <span class="nf">split_list</span><span class="p">(</span><span class="n">list_</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Splits a list by a given number (n) and returns a generator object.&quot;&quot;&quot;</span>
+    <span class="n">list_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">sp</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">list_size</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+        <span class="k">yield</span> <span class="n">list_</span><span class="p">[</span><span class="n">sp</span><span class="p">:</span><span class="nb">min</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="n">list_size</span><span class="p">)]</span></div>
+
+
+<span class="k">def</span> <span class="nf">_validate_endpoint_type</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">resource</span><span class="p">,</span> <span class="n">operation</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">operation</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="n">resource</span><span class="p">][</span><span class="s1">&#39;endpoint_types&#39;</span><span class="p">]:</span>
+        <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span>
+            <span class="s1">&#39;Detected unsupported endpoint_types. </span><span class="si">{method}</span><span class="s1"> only supports </span><span class="si">{endpoint_types}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span>
+                <span class="n">endpoint_types</span><span class="o">=</span><span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="n">resource</span><span class="p">][</span><span class="s1">&#39;endpoint_types&#39;</span><span class="p">]</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+
+<div class="viewcode-block" id="CustomDecorators"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators">[docs]</a><span class="k">class</span> <span class="nc">CustomDecorators</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+<div class="viewcode-block" id="CustomDecorators.deprecated"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators.deprecated">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">deprecated</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="n">decorated</span><span class="p">):</span>
+            <span class="nd">@wraps</span><span class="p">(</span><span class="n">decorated</span><span class="p">)</span>
+            <span class="k">def</span> <span class="nf">executer</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+                <span class="n">method</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">decorated</span><span class="o">.</span><span class="vm">__qualname__</span><span class="p">)</span>
+                <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
+                    <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> =&gt; </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">message</span><span class="p">),</span>
+                    <span class="ne">DeprecationWarning</span><span class="p">,</span>
+                    <span class="n">stacklevel</span><span class="o">=</span><span class="mi">2</span>
+                <span class="p">)</span>
+                <span class="k">return</span> <span class="n">decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">executer</span>
+        <span class="k">return</span> <span class="n">wrapper</span></div>
+
+<div class="viewcode-block" id="CustomDecorators.flatten_params"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators.flatten_params">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">flatten_params</span><span class="p">(</span><span class="n">decorated</span><span class="p">):</span>
+        <span class="nd">@wraps</span><span class="p">(</span><span class="n">decorated</span><span class="p">)</span>
+        <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+            <span class="c1"># skip batch request</span>
+            <span class="k">if</span> <span class="p">(</span><span class="s1">&#39;batch&#39;</span> <span class="ow">in</span> <span class="n">args</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;endpoint_type&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;batch&#39;</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+            <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">v</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">}</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">params</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">list</span><span class="p">):</span>
+                    <span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+                <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">bool</span><span class="p">):</span>
+                    <span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">wrapper</span></div>
+
+<div class="viewcode-block" id="CustomDecorators.resource_controller"><a class="viewcode-back" href="../../modules/twitter_ads_v2.utils.html#twitter_ads_v2.utils.CustomDecorators.resource_controller">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">resource_controller</span><span class="p">(</span><span class="o">*</span><span class="n">deco_args</span><span class="p">,</span> <span class="o">**</span><span class="n">deco_kwargs</span><span class="p">):</span>
+        <span class="k">def</span> <span class="nf">wrapper</span><span class="p">(</span><span class="n">decorated</span><span class="p">):</span>
+            <span class="nd">@wraps</span><span class="p">(</span><span class="n">decorated</span><span class="p">)</span>
+            <span class="k">def</span> <span class="nf">controller</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+                <span class="n">resource</span> <span class="o">=</span> <span class="n">deco_args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">default_operation</span> <span class="o">=</span> <span class="n">deco_kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;default_operation&#39;</span><span class="p">)</span>
+
+                <span class="n">params</span> <span class="o">=</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+                <span class="n">instance</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="n">account_id</span> <span class="o">=</span> <span class="n">instance</span><span class="o">.</span><span class="n">account_id</span>
+                <span class="n">operation_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="s1">&#39;create&#39;</span><span class="p">,</span> <span class="s1">&#39;batch&#39;</span><span class="p">,</span> <span class="s1">&#39;delete&#39;</span><span class="p">]</span>
+
+                <span class="k">if</span> <span class="n">default_operation</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">operation_types</span><span class="p">)</span> <span class="ow">or</span>\
+                       <span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;endpoint_type&#39;</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">):</span>
+                        <span class="n">operation</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;endpoint_type&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">operation</span> <span class="o">=</span> <span class="n">default_operation</span>
+                        <span class="n">params</span><span class="p">[</span><span class="s1">&#39;endpoint_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">operation</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">try</span><span class="p">:</span>
+                        <span class="n">operation</span> <span class="o">=</span> <span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;endpoint_type&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">args</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+                        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                            <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is missing the first argument (endpoint_type).&#39;</span>
+                            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">decorated</span><span class="o">.</span><span class="vm">__qualname__</span><span class="p">))</span>
+                        <span class="p">)</span> <span class="kn">from</span> <span class="bp">None</span>
+
+                <span class="n">method</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">decorated</span><span class="o">.</span><span class="vm">__qualname__</span><span class="p">)</span>
+                <span class="n">_validate_endpoint_type</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">resource</span><span class="p">,</span> <span class="n">operation</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">operation</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="s1">&#39;create&#39;</span><span class="p">]:</span>
+                    <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="n">resource</span><span class="p">][</span><span class="s1">&#39;RESOURCE_COLLECTION&#39;</span><span class="p">]</span>
+                    <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">account_id</span><span class="o">=</span><span class="n">account_id</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">operation</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="s1">&#39;delete&#39;</span><span class="p">,</span> <span class="s1">&#39;update&#39;</span><span class="p">]:</span>
+                    <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="n">resource</span><span class="p">][</span><span class="s1">&#39;RESOURCE&#39;</span><span class="p">]</span>
+                    <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                        <span class="n">account_id</span><span class="o">=</span><span class="n">account_id</span><span class="p">,</span>
+                        <span class="nb">id</span><span class="o">=</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+                    <span class="p">)</span>
+                <span class="k">elif</span> <span class="n">operation</span> <span class="o">==</span> <span class="s1">&#39;batch&#39;</span><span class="p">:</span>
+                    <span class="n">params</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;data&#39;</span><span class="p">,</span> <span class="p">[]))</span>
+                    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;content-type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">}</span>
+                    <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="n">resource</span><span class="p">][</span><span class="s1">&#39;BATCH&#39;</span><span class="p">]</span>
+                    <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">account_id</span><span class="o">=</span><span class="n">account_id</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">_resource</span><span class="o">=</span><span class="n">resource</span><span class="p">,</span> <span class="n">_headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">)</span>
+
+                <span class="k">return</span> <span class="n">decorated</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">_resource</span><span class="o">=</span><span class="n">resource</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">controller</span>
+        <span class="k">return</span> <span class="n">wrapper</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Twitter, Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

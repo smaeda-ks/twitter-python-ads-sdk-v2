@@ -1,0 +1,1152 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>twitter_ads_v2.base &mdash; Twitter Ads API SDK for Python 0.1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Twitter Ads API SDK for Python
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#quick-start">Quick Start</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#types-of-endpoint-type">Types of <code class="docutils literal notranslate"><span class="pre">endpoint_type</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#request-parameters">Request Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#rate-limit-handling-and-request-retry">Rate-limit handling and request retry</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#compatibility-versioning">Compatibility &amp; Versioning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../readme.html#development">Development</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#tests">Tests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../readme.html#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">SDK reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.base.html">twitter_ads_v2.base module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.client.html">twitter_ads_v2.client module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.enum.html">twitter_ads_v2.enum module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.error.html">twitter_ads_v2.error module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.http.html">twitter_ads_v2.http module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.oauth.html">twitter_ads_v2.oauth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.resources.html">twitter_ads_v2.resources module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/twitter_ads_v2.utils.html">twitter_ads_v2.utils module</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Twitter Ads API SDK for Python</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>twitter_ads_v2.base</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for twitter_ads_v2.base</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">urllib.parse</span> <span class="kn">import</span> <span class="n">urlparse</span>
+<span class="kn">from</span> <span class="nn">twitter_ads_v2.http</span> <span class="kn">import</span> <span class="n">Request</span>
+<span class="kn">from</span> <span class="nn">twitter_ads_v2.utils</span> <span class="kn">import</span> <span class="n">CustomDecorators</span>
+<span class="kn">from</span> <span class="nn">twitter_ads_v2.resources</span> <span class="kn">import</span> <span class="n">RESOURCE_TABLE</span>
+
+
+<div class="viewcode-block" id="Base"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base">[docs]</a><span class="k">class</span> <span class="nc">Base</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="n">_METHOD_MAP</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;load&#39;</span><span class="p">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;create&#39;</span><span class="p">:</span> <span class="s1">&#39;POST&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;update&#39;</span><span class="p">:</span> <span class="s1">&#39;PUT&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;delete&#39;</span><span class="p">:</span> <span class="s1">&#39;DELETE&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;batch&#39;</span><span class="p">:</span> <span class="s1">&#39;POST&#39;</span>
+    <span class="p">}</span>
+
+<div class="viewcode-block" id="Base.accounts"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.accounts">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;accounts&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">accounts</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Accounts</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/accounts</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">            id (:obj:`str`, optional): An Ads Account ID to retrieve.</span>
+<span class="sd">            Required when `endpoint_type` is `load`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.authenticated_user_access"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.authenticated_user_access">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;authenticated_user_access&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">authenticated_user_access</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Authenticated User Access</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/authenticated-user-access</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.bidding_rules"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.bidding_rules">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;bidding_rules&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">bidding_rules</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Bidding Rules</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/bidding-rules</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.campaigns"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.campaigns">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;campaigns&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">campaigns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Campaigns</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/campaigns</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `batch`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">            data (:obj:`list`, optional): A JSON POST body data to send.</span>
+<span class="sd">            Required when `endpoint_type` is `batch`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span>
+                       <span class="n">headers</span><span class="o">=</span><span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_headers&#39;</span><span class="p">,</span> <span class="p">{}),</span> <span class="n">body</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.content_categories"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.content_categories">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;content_categories&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">content_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Content Categories</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/content-categories</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.funding_instruments"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.funding_instruments">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;funding_instruments&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">funding_instruments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Funding Instruments</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/funding-instruments</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.iab_categories"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.iab_categories">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;iab_categories&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">iab_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;IAB Categories</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/iab-categories</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.line_items"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.line_items">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;line_items&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">line_items</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Line Items</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-items</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `batch`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">            data (:obj:`list`, optional): A JSON POST body data to send.</span>
+<span class="sd">            Required when `endpoint_type` is `batch`.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span>
+                       <span class="n">headers</span><span class="o">=</span><span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_headers&#39;</span><span class="p">,</span> <span class="p">{}),</span> <span class="n">body</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.line_item_apps"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.line_item_apps">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;line_item_apps&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">line_item_apps</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Line Item Apps</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-item-apps</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.line_item_placements"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.line_item_placements">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;line_item_placements&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">line_item_placements</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Line Item Placements</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/line-item-placements</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.media_creatives"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.media_creatives">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;media_creatives&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">media_creatives</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Media Creatives</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/media-creatives</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.promoted_accounts"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.promoted_accounts">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;promoted_accounts&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">promoted_accounts</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Promoted Accounts</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promoted-accounts</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.promoted_tweets"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.promoted_tweets">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;promoted_tweets&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">promoted_tweets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Promoted Tweets</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promoted-tweets</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.promotable_users"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.promotable_users">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;promotable_users&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">promotable_users</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Promotable Users</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/promotable-users</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.scheduled_promoted_tweets"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.scheduled_promoted_tweets">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;scheduled_promoted_tweets&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">scheduled_promoted_tweets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Scheduled Promoted Tweets</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/scheduled-promoted-tweets</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Targeting Criteria</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/targeting-criteria</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_suggestions"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_suggestions">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_suggestions&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_suggestions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Targeting Suggestions</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/targeting-suggestions</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_app_store_categories"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_app_store_categories">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span>
+        <span class="s1">&#39;targeting_criteria_app_store_categories&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_app_store_categories</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_behavior_taxonomies"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_behavior_taxonomies">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span>
+        <span class="s1">&#39;targeting_criteria_behavior_taxonomies&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_behavior_taxonomies</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_behaviors"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_behaviors">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_behaviors&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_behaviors</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_conversations"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_conversations">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span>
+        <span class="s1">&#39;targeting_criteria_conversations&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_conversations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_devices"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_devices">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_devices&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_devices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_events"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_events">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_events&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_events</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_interests"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_interests">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_interests&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_interests</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_languages"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_languages">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_languages&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_languages</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_locations"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_locations">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_locations&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_locations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_network_operators"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_network_operators">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span>
+        <span class="s1">&#39;targeting_criteria_network_operators&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_network_operators</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_platform_versions"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_platform_versions">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span>
+        <span class="s1">&#39;targeting_criteria_platform_versions&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_platform_versions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_platforms"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_platforms">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_platforms&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_platforms</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_tv_markets"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_tv_markets">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_tv_markets&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_tv_markets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.targeting_criteria_tv_shows"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.targeting_criteria_tv_shows">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;targeting_criteria_tv_shows&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">targeting_criteria_tv_shows</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.reach_estimate"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.reach_estimate">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;reach_estimate&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">reach_estimate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reach Estimate</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/reach-estimate</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.tax_settings"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tax_settings">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;tax_settings&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">tax_settings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Tax Settings</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/tax-settings</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `update`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.user_settings"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.user_settings">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;user_settings&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">user_settings</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;User Settings</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/campaign-management/api-reference/user-settings</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `load`, `update`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.account_media"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.account_media">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;account_media&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">account_media</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Account Media</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/account-media</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.scheduled_tweets"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.scheduled_tweets">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;scheduled_tweets&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">scheduled_tweets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Scheduled Tweets</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/scheduled-tweets</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.draft_tweets"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.draft_tweets">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;draft_tweets&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">draft_tweets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Draft Tweets</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/draft-tweets</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.draft_tweets_preview"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.draft_tweets_preview">[docs]</a>    <span class="k">def</span> <span class="nf">draft_tweets_preview</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="o">=</span><span class="s1">&#39;create&#39;</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span>
+                             <span class="n">resource</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">draft_tweet_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Draft Tweets Preview</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/draft-tweets#post-accounts-account-id-draft-tweets-preview-draft-tweet-id</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `create` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">            draft_tweet_id (:obj:`str`): A Draft Tweet ID to preview.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="s1">&#39;draft_tweets_preview&#39;</span><span class="p">][</span><span class="s1">&#39;RESOURCE&#39;</span><span class="p">]</span>
+        <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">account_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">account_id</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">draft_tweet_id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">resource</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="p">{})</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.tweets"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tweets">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">tweets</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Tweets</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/tweets</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `create`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">endpoint_type</span> <span class="o">==</span> <span class="s1">&#39;all&#39;</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="s1">&#39;tweets&#39;</span><span class="p">][</span><span class="s1">&#39;RESOURCE_GET&#39;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="s1">&#39;tweets&#39;</span><span class="p">][</span><span class="s1">&#39;RESOURCE_POST&#39;</span><span class="p">]</span>
+        <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">account_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">account_id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">resource</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.tweet_previews"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tweet_previews">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;tweet_previews&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">tweet_previews</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Tweet Previews</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/tweet-previews</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.image_app_download_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.image_app_download_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;image_app_download_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">image_app_download_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Image App Download Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-app-download</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.image_conversation_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.image_conversation_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;image_conversation_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">image_conversation_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Image Conversation Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-conversation</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.video_app_download_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_app_download_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;video_app_download_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">video_app_download_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Video App Download Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-app-download</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.video_conversation_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_conversation_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;video_conversation_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">video_conversation_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Video Conversation Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-conversation</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.video_website_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_website_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;video_website_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">video_website_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Video Website Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-website</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.website_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.website_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;website_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">website_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Website Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/website</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.image_direct_message_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.image_direct_message_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;image_direct_message_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">image_direct_message_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Image Direct Message Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/image-direct-message</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.video_direct_message_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.video_direct_message_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;video_direct_message_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">video_direct_message_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Video Direct Message Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/video-direct-message</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.poll_cards"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.poll_cards">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;poll_cards&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">poll_cards</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Poll Cards</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/poll</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.media_library"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.media_library">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;media_library&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">media_library</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Media Library</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/media-library</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.cards_fetch"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.cards_fetch">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;cards_fetch&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">cards_fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Cards Fetch</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/cards-fetch</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`</span>
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.preroll_call_to_actions"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.preroll_call_to_actions">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;preroll_call_to_actions&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">preroll_call_to_actions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Preroll Call To Actions</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/creatives/api-reference/preroll-call-to-actions</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `update`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.active_entities"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.active_entities">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;active_entities&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">active_entities</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Active Entities</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/analytics/api-reference/active-entities</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.analytics_sync_stats"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_sync_stats">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;analytics_sync_stats&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">analytics_sync_stats</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Synchronous Analytics</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/analytics/api-reference/synchronous</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># TODO: some helper functions here?</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.analytics_async_jobs"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_async_jobs">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;analytics_async_jobs&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">analytics_async_jobs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Asynchronous Analytics</span>
+<span class="sd">        Retrieve details for some or all asynchronous analytics jobs for the current account.</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#get-stats-jobs-accounts-account-id</span>
+<span class="sd">        Cancel an asynchronous analytics job for a given ads account.</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#delete-stats-jobs-accounts-account-id-job-id</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># TODO: some helper functions here?</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.analytics_async_create_job"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_async_create_job">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;analytics_async_create_job&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;create&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">analytics_async_create_job</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Asynchronous Analytics</span>
+<span class="sd">        Create an asynchronous analytics job for the current account.</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/analytics/api-reference/asynchronous#post-stats-jobs-accounts-account-id</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `create` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="c1"># TODO: some helper functions here?</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.analytics_async_job_data"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.analytics_async_job_data">[docs]</a>    <span class="k">def</span> <span class="nf">analytics_async_job_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="o">=</span><span class="s1">&#39;load&#39;</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Returns the results of the specified async job data URL.</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `load`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">            url (:obj:`str`): A job data URL to download.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># TODO: some helper functions here?</span>
+        <span class="n">resource</span> <span class="o">=</span> <span class="n">urlparse</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+        <span class="n">domain</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{0}</span><span class="s1">://</span><span class="si">{1}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">resource</span><span class="o">.</span><span class="n">scheme</span><span class="p">,</span> <span class="n">resource</span><span class="o">.</span><span class="n">netloc</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span>
+            <span class="n">resource</span><span class="o">.</span><span class="n">path</span><span class="p">,</span>
+            <span class="n">domain</span><span class="o">=</span><span class="n">domain</span><span class="p">,</span>
+            <span class="n">raw_body</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.reach_frequency_campaigns"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.reach_frequency_campaigns">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;reach_frequency_campaigns&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">reach_frequency_campaigns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reach and Average Frequency (campaigns)</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/analytics/api-reference/reach#get-stats-accounts-account-id-reach-campaigns</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.reach_frequency_funding_instruments"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.reach_frequency_funding_instruments">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span>
+        <span class="s1">&#39;reach_frequency_funding_instruments&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">reach_frequency_funding_instruments</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Reach and Average Frequency (funding_instruments)</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/analytics/api-reference/reach#get-stats-accounts-account-id-reach-funding-instruments</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.tailored_audiences"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tailored_audiences">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;tailored_audiences&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">tailored_audiences</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Tailored Audiences</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/audiences/api-reference/tailored-audiences</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `load`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.tailored_audiences_users"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tailored_audiences_users">[docs]</a>    <span class="k">def</span> <span class="nf">tailored_audiences_users</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="o">=</span><span class="s1">&#39;create&#39;</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span>
+                                 <span class="n">tailored_audience_id</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="p">[]):</span>
+        <span class="sd">&quot;&quot;&quot;Tailored Audiences Users</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/audiences/api-reference/audience</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `create`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">            tailored_audience_id (:obj:`str`): A Tailored Audience ID to update.</span>
+<span class="sd">            data (:obj:`list`): A JSON POST body data to send.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="s1">&#39;tailored_audiences_users&#39;</span><span class="p">][</span><span class="s1">&#39;RESOURCE&#39;</span><span class="p">]</span>
+        <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">account_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">account_id</span><span class="p">,</span> <span class="nb">id</span><span class="o">=</span><span class="n">tailored_audience_id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span>
+            <span class="n">resource</span><span class="p">,</span>
+            <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;content-type&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">},</span>
+            <span class="n">params</span><span class="o">=</span><span class="p">{},</span>
+            <span class="n">body</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.tailored_audience_permissions"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.tailored_audience_permissions">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">tailored_audience_permissions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Tailored Audience Permissions</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/audiences/api-reference/tailored-audience-permissions</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all`, `create`, `delete`</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">endpoint_type</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="s1">&#39;create&#39;</span><span class="p">]:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="s1">&#39;tailored_audience_permissions&#39;</span><span class="p">][</span><span class="s1">&#39;RESOURCE_COLLECTION&#39;</span><span class="p">]</span>
+            <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">account_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">account_id</span><span class="p">,</span>
+                <span class="n">tailored_audience_id</span><span class="o">=</span><span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tailored_audience_id&#39;</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">elif</span> <span class="n">endpoint_type</span> <span class="o">==</span> <span class="s1">&#39;delete&#39;</span><span class="p">:</span>
+            <span class="n">base</span> <span class="o">=</span> <span class="n">RESOURCE_TABLE</span><span class="p">[</span><span class="s1">&#39;tailored_audience_permissions&#39;</span><span class="p">][</span><span class="s1">&#39;RESOURCE&#39;</span><span class="p">]</span>
+            <span class="n">resource</span> <span class="o">=</span> <span class="n">base</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+                <span class="n">account_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">account_id</span><span class="p">,</span>
+                <span class="n">tailored_audience_id</span><span class="o">=</span><span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tailored_audience_id&#39;</span><span class="p">),</span>
+                <span class="n">tailored_audience_permission_id</span><span class="o">=</span><span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tailored_audience_permission_id&#39;</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">NotImplementedError</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">resource</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.insights"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.insights">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;insights&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">insights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Insights</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/audiences/api-reference/insights</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.insights_available_audiences"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.insights_available_audiences">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;insights_available_audiences&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">insights_available_audiences</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Insights (available_audiences)</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/audiences/api-reference/insights#get-insights-accounts-account-id-available-audiences</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div>
+
+<div class="viewcode-block" id="Base.keyword_insights"><a class="viewcode-back" href="../../modules/twitter_ads_v2.base.html#twitter_ads_v2.base.Base.keyword_insights">[docs]</a>    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">resource_controller</span><span class="p">(</span><span class="s1">&#39;keyword_insights&#39;</span><span class="p">,</span> <span class="n">default_operation</span><span class="o">=</span><span class="s1">&#39;all&#39;</span><span class="p">)</span>
+    <span class="nd">@CustomDecorators</span><span class="o">.</span><span class="n">flatten_params</span>
+    <span class="k">def</span> <span class="nf">keyword_insights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">endpoint_type</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Keyword Insights</span>
+<span class="sd">        https://developer.twitter.com/en/docs/ads/audiences/api-reference/keyword-insights</span>
+
+<span class="sd">        Supported `endpoint_type`:</span>
+<span class="sd">            `all` (default)</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            endpoint_type (:obj:`str`, optional): An endpoint type.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span>
+            <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_METHOD_MAP</span><span class="p">[</span><span class="n">endpoint_type</span><span class="p">],</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_resource&#39;</span><span class="p">),</span> <span class="n">params</span><span class="o">=</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">perform</span><span class="p">()</span></div></div>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Twitter, Inc
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
