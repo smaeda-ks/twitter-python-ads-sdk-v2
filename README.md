@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/smaeda-ks/twitter-python-ads-sdk-v2.svg?branch=master)](https://travis-ci.org/smaeda-ks/twitter-python-ads-sdk-v2)
+[![PyPI](https://img.shields.io/pypi/v/twitter-ads-v2.svg)](https://pypi.python.org/pypi/twitter-ads-v2)
+[![PyPI version](https://img.shields.io/pypi/pyversions/twitter-ads-v2.svg)](https://pypi.python.org/pypi/twitter-ads-v2)
+
 # Getting Started
 
 ## Installation
