@@ -61,7 +61,7 @@ setup(
     classifiers=CLASSIFIERS,
     install_requires=[
         'python-dateutil',
-        'oauthlib==3.1.0',
+        'oauthlib==4.0.0',
         'requests'
     ],
     packages=find_packages(exclude=['docs', 'tests']),
